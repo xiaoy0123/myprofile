@@ -97,26 +97,154 @@ export const PHOTOS: Photo[] = [
 
 export const TRAVEL_LOGS: TravelItem[] = [
   {
-    "id": 1,
+    "id": 1765557646271,
+    "year": "2025",
+    "location": "湖南-浏阳",
+    "description": "去漂流",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765557603996,
+    "year": "2025",
+    "location": "湖北-潜江",
+    "description": "去吃小龙虾",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765557563659,
+    "year": "2025",
+    "location": "日本-关东",
+    "description": "所谓关东不是一个地方，日本太小，几天就能玩很多个市，不一一记录，统称关东：京都、神户、高岛、宇治、奈良、滋贺",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765557375238,
     "year": "2024",
-    "location": "Kyoto, Japan",
-    "description": "Exploring ancient temples and autumn foliage.",
+    "location": "日本-大阪",
+    "description": "喔喔喔！第一次出国，我一直想去的日本，在东海上飞行的时候，即紧张又激动。小小的我也能拿着护照走出国门了。第一次看到外面的世界。",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765557236930,
+    "year": "2024",
+    "location": "湖北-咸宁",
+    "description": "这不是回家，而是武汉大学的一次地质实习，去了通山、通城等地方进行地质勘探和地理学习，爬了九宫山。",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765557143472,
+    "year": "2024",
+    "location": "湖北-恩施",
+    "description": "恩施利川，盛夏的清凉之地，壮观的腾龙洞",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765557068253,
+    "year": "2024",
+    "location": "中国-上海",
+    "description": "和我一个陕西的本科同学一起去，他去看崩铁漫展，我随他一同去旅游。久闻魔都盛名，如今终于亲眼所见，颇为震撼。",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765556987719,
+    "year": "2024",
+    "location": "湖南-长沙",
+    "description": "这是我五一劳动节时去的，是我第一次一个人旅游",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765556880098,
+    "year": "2024",
+    "location": "湖南-岳阳",
+    "description": "第一次和爸妈一起去旅游，此前去看了黄鹤楼、滕王阁，此行又赏岳阳楼。",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765556804464,
+    "year": "2024",
+    "location": "中国-北京",
+    "description": "回来的路上路过了北京，没想到第一次来北京是因为路过，去看了从小听到大的天安门、天坛和无比雄伟的故宫，以及08年的奥运场馆和课本中史铁生笔下的我与地坛、和他的母亲想带他去可惜未能实现的北海公园，是一个充满历史与记忆的地方。",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765556489339,
+    "year": "2024",
+    "location": "黑龙江-哈尔滨",
+    "description": "在我高中时候，我都一直觉得哈尔滨是一个遥远的地方，是一个我很难去到的地方，现在也是置身于此冰雪世界了，真的很美，雾凇沆砀，银装素裹，干雪如沙碾作尘，寒气凌冽。去的路上我们一伙人围在一个卧铺包厢里打扑克、聊天、玩游戏，外面是凛冽寒风，里面是我们涌动的青春，我认为这是属于青春的独特回忆，单纯而美好。",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765556320981,
+    "year": "2023",
+    "location": "辽宁-沈阳",
+    "description": "感慨本科的青春时光，七八个同学一个主意屁股一拍就买上了去当时火极一时的冰雪东北的机票。这也是我第一次坐飞机，一伙人凌晨爬起来去赶飞机，说走就走。也是第一次去这么冷的地方",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765556184859,
+    "year": "2023",
+    "location": "江西-南昌",
+    "description": "高中课本里曾学过的滕王阁序，也是让我一睹真容了",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765556137230,
+    "year": "2023",
+    "location": "广东-珠海",
+    "description": "这是我第一次看见大海，很美丽的大海，能够遥望澳门和港珠澳大桥",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765556093576,
+    "year": "2023",
+    "location": "广东-广州",
+    "description": "去看了高中时候在魔法士干脆面的闪卡里曾见过的广州塔",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1765556019550,
+    "year": "2023",
+    "location": "四川-成都",
+    "description": "也是研学那次去的，不过是省会单独列出来吧",
+    "imageUrl": "https://picsum.photos/800/600?grayscale",
+    "photos": []
+  },
+  {
+    "id": 1,
+    "year": "2023",
+    "location": "四川-乐山",
+    "description": "武大组织暑期研学，去参观武大重走西迁路，还去了附近的峨眉山爬山",
     "imageUrl": "https://picsum.photos/id/1016/600/400",
     "photos": []
   },
   {
     "id": 2,
     "year": "2023",
-    "location": "Reykjavik, Iceland",
-    "description": "Chasing the northern lights and geothermal springs.",
+    "location": "河南-南阳",
+    "description": "回老家旅游了一下",
     "imageUrl": "https://picsum.photos/id/1036/600/400",
     "photos": []
   },
   {
     "id": 3,
     "year": "2022",
-    "location": "Paris, France",
-    "description": "Architecture tours and cafe culture.",
+    "location": "广西-桂林",
+    "description": "和我的广西舍友一起去了桂林、阳朔、恭城\n",
     "imageUrl": "https://picsum.photos/id/1041/600/400",
     "photos": []
   }
