@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { Profile, Photo, TravelItem, WorkExperience, BlogPost, Education, Project, Award, Research } from '../types';
 import { USER_PROFILE, PHOTOS, TRAVEL_LOGS, WORK_DATA, BLOG_POSTS, EDUCATION_DATA, PROJECT_DATA, AWARD_DATA, RESEARCH_DATA } from '../constants';
 
@@ -56,41 +56,19 @@ interface DataContextType {
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
-// Helper to load data from localStorage or fallback to constants
-const getInitialData = <T,>(key: string, fallback: T): T => {
-    try {
-        const saved = localStorage.getItem(key);
-        return saved ? JSON.parse(saved) : fallback;
-    } catch (e) {
-        console.warn(`Error parsing localStorage for ${key}`, e);
-        return fallback;
-    }
-};
-
 export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  // Initialize state from LocalStorage (lazy initialization)
-  const [profile, setProfile] = useState<Profile>(() => getInitialData('app_profile', USER_PROFILE));
-  const [photos, setPhotos] = useState<Photo[]>(() => getInitialData('app_photos', PHOTOS));
-  const [travelLogs, setTravelLogs] = useState<TravelItem[]>(() => getInitialData('app_travel', TRAVEL_LOGS));
+  // Initialize state directly from constants
+  const [profile, setProfile] = useState<Profile>(USER_PROFILE);
+  const [photos, setPhotos] = useState<Photo[]>(PHOTOS);
+  const [travelLogs, setTravelLogs] = useState<TravelItem[]>(TRAVEL_LOGS);
   
-  const [workData, setWorkData] = useState<WorkExperience[]>(() => getInitialData('app_work', WORK_DATA));
-  const [educationData, setEducationData] = useState<Education[]>(() => getInitialData('app_edu', EDUCATION_DATA));
-  const [projectData, setProjectData] = useState<Project[]>(() => getInitialData('app_proj', PROJECT_DATA));
-  const [awardData, setAwardData] = useState<Award[]>(() => getInitialData('app_award', AWARD_DATA));
-  const [researchData, setResearchData] = useState<Research[]>(() => getInitialData('app_res', RESEARCH_DATA));
+  const [workData, setWorkData] = useState<WorkExperience[]>(WORK_DATA);
+  const [educationData, setEducationData] = useState<Education[]>(EDUCATION_DATA);
+  const [projectData, setProjectData] = useState<Project[]>(PROJECT_DATA);
+  const [awardData, setAwardData] = useState<Award[]>(AWARD_DATA);
+  const [researchData, setResearchData] = useState<Research[]>(RESEARCH_DATA);
   
-  const [blogPosts, setBlogPosts] = useState<BlogPost[]>(() => getInitialData('app_blog', BLOG_POSTS));
-
-  // --- Persistence Effects: Save to LocalStorage whenever state changes ---
-  useEffect(() => localStorage.setItem('app_profile', JSON.stringify(profile)), [profile]);
-  useEffect(() => localStorage.setItem('app_photos', JSON.stringify(photos)), [photos]);
-  useEffect(() => localStorage.setItem('app_travel', JSON.stringify(travelLogs)), [travelLogs]);
-  useEffect(() => localStorage.setItem('app_work', JSON.stringify(workData)), [workData]);
-  useEffect(() => localStorage.setItem('app_edu', JSON.stringify(educationData)), [educationData]);
-  useEffect(() => localStorage.setItem('app_proj', JSON.stringify(projectData)), [projectData]);
-  useEffect(() => localStorage.setItem('app_award', JSON.stringify(awardData)), [awardData]);
-  useEffect(() => localStorage.setItem('app_res', JSON.stringify(researchData)), [researchData]);
-  useEffect(() => localStorage.setItem('app_blog', JSON.stringify(blogPosts)), [blogPosts]);
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>(BLOG_POSTS);
 
   // --- Export Function ---
   const exportDataAsTypeScript = () => {
