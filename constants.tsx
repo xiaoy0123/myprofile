@@ -142,63 +142,208 @@ export const WORK_DATA: WorkExperience[] = [
 export const EDUCATION_DATA: Education[] = [
   {
     "id": 1,
-    "school": "Wuhan University",
+    "school": "武汉大学-测绘遥感全国重点实验室",
     "stage": "Master",
-    "period": "2023 - 2026",
-    "major": "Computer Science",
-    "admissionMethod": "Baoyan (Recommended)"
+    "period": "2025-2027",
+    "major": "空间数智化",
+    "admissionMethod": "保研(Recommended)"
   },
   {
     "id": 2,
-    "school": "Wuhan University",
+    "school": "武汉大学-遥感信息工程学院",
     "stage": "Bachelor",
-    "period": "2019 - 2023",
-    "major": "Software Engineering",
-    "gpa": "3.8/4.0",
-    "rank": "Top 5%",
-    "english": "CET-6: 620"
+    "period": "2021-2025",
+    "major": "遥感科学与技术",
+    "gpa": "3.88/4.0",
+    "rank": "Top 8%",
+    "english": "CET-4、CET-6"
   },
   {
     "id": 3,
-    "school": "Shanghai High School",
-    "stage": "High School",
-    "period": "2016 - 2019",
-    "gaokaoScore": "630"
+    "school": "湖北省嘉鱼县第一中学",
+    "stage": "高中",
+    "period": "2018-2021",
+    "gaokaoScore": "652"
   }
 ];
 
 export const PROJECT_DATA: Project[] = [
   {
-    "id": 1,
-    "name": "Smart Campus App",
-    "role": "Team Lead",
+    "name": "新疆油田地上下一体建模",
+    "period": "2025",
+    "role": "负责人",
+    "description": "利用petrel软件进行钻井井位、井轨迹、井姿态获取，地质层数据、地震数据、剖面数据获取，并利用爆炸图、透明图、挖方、漫游等技术进行地上模型与地下地质、油田、水、管道数据的一体化建模与一体可视化方案设计。",
+    "id": 1765524712086
+  },
+  {
+    "name": "摄影测量综合项目",
+    "period": "2024",
+    "role": "负责人",
+    "description": "利用全站仪、千寻、GNSS、无人机等测量设备进行外业控制点与导线测量，内业完成控制点点选、相片拼接、数据导入、像点量测、光束法空三加密计算等。以及进行某矿区的内业立体测绘量测，手动三角网绘制。",
+    "id": 1765524567742
+  },
+  {
+    "name": "基于YOLO的智慧交通信号灯系统",
+    "period": "2024",
+    "role": "成员",
+    "description": "传统的交通信号灯按照默认设置的时间进行红绿变化，难以应对灵活变化的车流量现况，尤其是高峰期，容易造成交通堵塞。因此我们设计了一种智慧交通信号灯，可以依据实时的车流量情况灵活改变交通信号灯时长，创造绿波。利用边缘计算技术实现实时反馈。",
+    "id": 1765523838781
+  },
+  {
+    "name": "深度学习跨域语义分割",
     "period": "2023",
-    "description": "Developed a comprehensive mobile app for campus services using Flutter and Go."
+    "role": "成员",
+    "description": "由于深度学习严重依赖带有groundtruth标签的大量数据集进行模型参数优化训练，而不同数据之间由于季节、地物类型、地面反射率、传感器等不同很难将源域训练得到的模型参数泛化到其他域数据上获得良好的语义分割效果，因此提出了一种可以克服domain gap的方法，利用源域数据也可以训练得到具有很好泛化效果的模型参数，将其作用在其他域数据上。涉及对抗学习、深度学习技术。",
+    "id": 1765523657478
+  },
+  {
+    "id": 1,
+    "name": "无人驾驶：车道线检测",
+    "role": "成员",
+    "period": "2022",
+    "description": "利用单目SLAM视觉进行视频流车道线检测，利用SLAM算法实时计算车辆位置与姿态，构建车辆位置地图，并进行车道线与地面标识检测，实时反馈给无人驾驶系统。"
   }
 ];
 
 export const AWARD_DATA: Award[] = [
   {
-    "id": 1,
-    "name": "National Scholarship",
+    "name": "武汉大学研究生优秀新生奖学金",
+    "level": "武汉大学",
+    "date": "2025",
+    "id": 1765525711573
+  },
+  {
+    "name": "美术：色彩六级证书",
+    "level": "省级",
+    "date": "2016",
+    "id": 1765525677327
+  },
+  {
+    "name": "十余项体育竞赛奖项",
+    "level": "武汉大学",
+    "date": "2024",
+    "id": 1765525523357
+  },
+  {
+    "name": "全国高校计算机技能竞赛Python赛项一等奖",
+    "level": "国家级",
+    "date": "2023",
+    "id": 1765525468861
+  },
+  {
+    "name": "大学生创新创业大赛省级二等奖",
+    "level": "省级",
+    "date": "2024",
+    "id": 1765525418661
+  },
+  {
+    "name": "武汉大学2024GIS应用大赛三等奖",
+    "level": "武汉大学",
+    "date": "2024",
+    "id": 1765525268829
+  },
+  {
+    "name": "武汉大学优秀本科毕业论文",
+    "level": "武汉大学",
+    "date": "2025",
+    "id": 1765525220366
+  },
+  {
+    "name": "武汉大学优秀本科毕业生",
+    "level": "武汉大学",
+    "date": "2025",
+    "id": 1765525207749
+  },
+  {
+    "name": "武汉大学优秀学生",
+    "level": "武汉大学",
+    "date": "2024",
+    "id": 1765525179765
+  },
+  {
+    "name": "武汉大学社会活动积极分子",
+    "level": "武汉大学",
+    "date": "2024",
+    "id": 1765525153694
+  },
+  {
+    "name": "武汉大学优秀学生干部",
+    "level": "武汉大学",
+    "date": "2024",
+    "id": 1765525059246
+  },
+  {
+    "name": "武汉大学优秀学生",
+    "level": "武汉大学",
+    "date": "2023",
+    "id": 1765525047806
+  },
+  {
+    "name": "武汉大学三好学生",
+    "level": "武汉大学",
     "date": "2022",
-    "level": "National"
+    "id": 1765525026846
+  },
+  {
+    "name": "国家励志奖学金",
+    "level": "武汉大学",
+    "date": "2023",
+    "id": 1765525012710
+  },
+  {
+    "name": "国家奖学金",
+    "level": "国家级",
+    "date": "2024",
+    "id": 1765524991317
+  },
+  {
+    "name": "武汉大学乙等奖学金",
+    "level": "武汉大学",
+    "date": "2024",
+    "id": 1765524967103
+  },
+  {
+    "id": 1,
+    "name": "武汉大学乙等奖学金",
+    "date": "2022",
+    "level": "武汉大学"
   },
   {
     "id": 2,
-    "name": "ICPC Regional Gold Medal",
-    "date": "2021",
-    "level": "Regional"
+    "name": "武汉大学丙等奖学金",
+    "date": "2023",
+    "level": "武汉大学"
   }
 ];
 
 export const RESEARCH_DATA: Research[] = [
   {
-    "id": 1,
-    "title": "AI in Urban Planning",
-    "publication": "IEEE Access",
+    "title": "基于语义分割的变电站模型与点云配准方法研究",
+    "publication": "武汉大学优秀毕业论文库",
+    "date": "2025",
+    "description": "一种基于语义分割的变电站模型与点云配准方法",
+    "id": 1765524904037
+  },
+  {
+    "title": "发明专利：一种基于语义分割的变电站模型与点云配准方法",
+    "publication": "国家专利",
+    "date": "2026",
+    "description": "一种基于语义分割的变电站模型与点云配准方法",
+    "id": 1765524864157
+  },
+  {
+    "title": "新型实用专利：一种测绘遥感无人机",
+    "publication": "国家专利",
     "date": "2024",
-    "description": "Proposed a novel algorithm for optimizing traffic flow using reinforcement learning."
+    "description": "一种具有特殊减震机构的用于测绘遥感的无人机结构",
+    "id": 1765524821909
+  },
+  {
+    "id": 1,
+    "title": "新型实用专利：一种扫地车",
+    "publication": "国家专利",
+    "date": "2023",
+    "description": "一种特殊结构的扫地车"
   }
 ];
 
