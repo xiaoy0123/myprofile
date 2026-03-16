@@ -489,6 +489,20 @@ export const EDUCATION_DATA: Education[] = [
 
 export const PROJECT_DATA: Project[] = [
   {
+    "name": "基于深度学习分割的变电站点云与模型配准方法研究",
+    "period": "2025",
+    "description": "使用PointNet++算法对变电站全域三维点云进行语义分割，手动标注训练集与验证集(CloudCompare)，实现电线杆、开关、变电箱等7类地物的自动化分割，交并比(1oU)达到82.6%;基于语义分割结果，选取稳定性高的语义类别，实现点云与CAD表面模型的异源数据配准，配准误差控制在0.15m以内;成果可用于变电站真实场景与设计图纸的差异检测及变化监测。提升了我对三维数据的认识、处理能力，三维数据的深度学习输入与处理方法以及特征匹配技术的了解。",
+    "role": "负责人",
+    "id": 1773667698463
+  },
+  {
+    "name": "融合图谱与数字孪生场景的历史文化名城",
+    "period": "2026",
+    "role": "成员",
+    "description": "基于Unreal Engine 5 与Cesium for Unreal插件，使用 Python 脚本自动化构建广州市三维数字李生场景，集成行政区划边界地名标注、历史建筑模型;开发Python脚本驱动场景动画:根据知识图谱提取历史事件路径，自动生成相机轨迹、动态路径可视化、文字提示动画;实现参数化控制的历史事件时空可视化演示系统，提升历史文化的沉浸式展示效果。熟悉了虚幻引擎的使用。",
+    "id": 1773667670744
+  },
+  {
     "name": "新疆油田地上下一体建模",
     "period": "2025",
     "role": "负责人",
@@ -521,7 +535,7 @@ export const PROJECT_DATA: Project[] = [
     "name": "无人驾驶：车道线检测",
     "role": "成员",
     "period": "2022",
-    "description": "利用单目SLAM视觉进行视频流车道线检测，利用SLAM算法实时计算车辆位置与姿态，构建车辆位置地图，并进行车道线与地面标识检测，实时反馈给无人驾驶系统。"
+    "description": "从零实现ORB-SLAM2视觉里程计核心模块，完成特征提取、帧间匹配、局部建图与回环检测;使用自采数据优化特征提取参数提升低纹理场景下的跟踪稳定性，跟踪丢失率降低;掌握SLAM 系统架构与视觉几何基础，为后续自动驾驶感知研究打下基础"
   }
 ];
 
@@ -670,10 +684,10 @@ export const RESEARCH_DATA: Research[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     "id": 1,
-    "title": "The Art of Digital Minimalism",
+    "title": "关注我的CSDN：是白的小宇",
     "date": "Oct 12, 2024",
-    "excerpt": "How reducing digital clutter can lead to a more focused and creative life.",
+    "excerpt": "会发布摄影测量、遥感技术、点云、数值分析相关武汉大学学科内容与技术分析",
     "readTime": "5 min read",
-    "category": "Lifestyle"
+    "category": "技术博客"
   }
 ];
